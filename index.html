@@ -362,7 +362,7 @@ function showResult(){
   $("rmode").textContent=modeLabel()+" ・ 出題範囲: "+rangeLabel;
   $("rscore").textContent=right+" / "+asked;
   $("rrate").textContent="正答率 "+pct+"% ・ 最大連続正解 "+maxStreak;
-  $("rcomment").textContent=pct===100?"全問正解！":pct>=80?"素晴らしい！":pct>=50?"お見事！":"";
+  $("rcomment").textContent=pct===100?"全問正解！！":pct>=80?"素晴らしい！":pct>=50?"お見事！":"";
   const w=$("rwrong");w.innerHTML="";
   if(wrongs.length){
     const h=document.createElement("div");h.className="sub";h.style.margin="16px 0 0";h.textContent="まちがえた問題("+wrongs.length+"問)";w.appendChild(h);
